@@ -1,4 +1,5 @@
 import time
+
 import redis
 from flask import Flask
 
@@ -21,6 +22,5 @@ def hello():
     count = get_hit_count()
     return 'Hello World! I have been seen {} times.\n'.format(count)
 
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
